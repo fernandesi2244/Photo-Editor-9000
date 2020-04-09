@@ -8,7 +8,7 @@
 // 3.1  added e*Pressed switches and noLoop(); 
 // 3.2  added img.resize() to line 132, for students with more advanced filters
 // 3.25 possible fix for the double-click bug
-// 9000 four filters added, aesthetics updated (major functionality update)
+// 9000 four filters added, aesthetics updated (major functionality implementation)
 
 boolean PicLoaded = false;
 boolean Grayscale = false;
