@@ -20,7 +20,7 @@ If ‘r’ on the keyboard is pressed before selecting this filter, then a red s
 The program executes filter 1 by going through a loop that will repeat for each pixel in the image. Inside of that loop, the current pixel’s color is obtained. Then, the red, green, or blue value is increased by 50 depending on which keyboard button was pressed before. The filter is considered static because each time the loop is run, there is a 50% chance that the index will be increased by 2. Therefore, the image appears static after this filter is applied. The 50% possibility is determined through the random() function.
 
 Original Image:
-![Filter 1 Original](filter1Original.png)
+![Filter 1 Original](filter1Original.PNG)
 
 
 ## Filter 2: Invert 2.0
