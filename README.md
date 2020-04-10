@@ -18,40 +18,50 @@ A fun digital image manipulation application!
 If ‘r’ on the keyboard is pressed before selecting this filter, then a red saturation will be applied. The same applies for green and blue with ‘g’ and ‘b’, respectively. If no key is pressed before the filter is applied, then the filter displays a message in the console prompting the user to tap a key before activating the filter; in this case, nothing happens to the image. The program executes filter 1 by going through a loop that will repeat for each pixel in the image. Inside of that loop, the current pixel’s color is obtained. Then, the red, green, or blue value is increased by 50 depending on which keyboard button was pressed before. The filter is considered static because each time the loop is run, there is a 50% chance that the index will be increased by 2. Therefore, the image appears static after this filter is applied. The 50% possibility is determined through the random() function.
 
 Original Image:
+
 ![Filter 2 Original](filter1Original.PNG)
 
 Green Static Saturation:
+
 ![Filter 2 Green Effect](filter1GreenEffect.PNG)
 
 ## Filter 3: Invert 2.0
 In this filter, there is a 50% chance of 1 out of 2 things happening. This possibility is created by using the function random(). The first possibility is invert #1.The second possibility is invert #2. They are not supposed to represent a perfect invert, but they do give the same kind of look. The invert looks are created by running through a loop that goes through all the pixels in the image loaded. Inside the loop, each pixel’s color is obtained. Then, the red, green, and blue values are swapped to create a cool invert effect. In one of the possibilities, green goes in for the red value, blue goes in for the green value, and red goes in for the blue value. In the other filter, green goes in for the red value, red goes in for the green value, and blue stays where it is.
 
 Original Image:
+
 ![Filter 3 Original](filter3Original.PNG)
 
 Invert Effect 1:
+
 ![Filter 3 Effect 1](filter3Effect1.PNG)
 
 Invert Effect 2:
+
 ![Filter 3 Effect 2](filter3Effect2.PNG)
 
 ## Filter 4: Flip and Whiten or Darken
 When this filter is applied, a loop runs through all the pixels in the image and stores them in a temporary array. Then, it runs through the pixels again and makes the 1st pixel the last pixel, and so on, until the image is flipped. It does this by setting pixel[index] to tempArray[img.pixels.length-1-index]. While it sets this, there is also a 50% chance that the image will be whitened. The other 50% chance is that the image will be darkened. The program does this by increasing or decreasing all RGB values by a set amount.
 
 Original Image:
+
 ![Filter 4 Original](filter4Original.PNG)
 
 Flipped and Darkened:
+
 ![Filter 4 Darkened](filter4Darkened.PNG)
 
 Flipped and Lightened:
+
 ![Filter 4 Lightened](filter4Lightened.PNG)
 
 ## Filter 5: Blurry Effect aka the Phase Shift
 When this filter is applied, a leapfrog effect is made. The program does this by loading up the pixels and running through a while loop. In this loop, a pixel’s color is stored in a temporary color object. The pixel's color is then changed to the color of the pixel behind it, which is found in another temporary color object. The program keeps doing this until it has processed all the pixels. The program changes every other pixel using the modulus function. This makes every other pixel “move” to the right, causing a blurry effect.
 
 Original Image:
+
 ![Filter 5 Original](filter5Original.PNG)
 
 With Blur Effect:
+
 ![Filter 5 Effect](filter5Effect.PNG)
