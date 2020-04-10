@@ -23,7 +23,7 @@ Original Image:
 
 Green Static Saturation:
 
-![Filter 2 Green Effect](filter1GreenEffect.PNG)
+![Filter 2 Green Effect](filter1GreenStaticEffect.PNG)
 
 ## Filter 3: Invert 2.0
 In this filter, there is a 50% chance of 1 out of 2 things happening. This possibility is created by using the function random(). The first possibility is invert #1.The second possibility is invert #2. They are not supposed to represent a perfect invert, but they do give the same kind of look. The invert looks are created by running through a loop that goes through all the pixels in the image loaded. Inside the loop, each pixel’s color is obtained. Then, the red, green, and blue values are swapped to create a cool invert effect. In one of the possibilities, green goes in for the red value, blue goes in for the green value, and red goes in for the blue value. In the other filter, green goes in for the red value, red goes in for the green value, and blue stays where it is.
